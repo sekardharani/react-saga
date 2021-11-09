@@ -1,0 +1,26 @@
+{
+  "budgets": [
+    {
+      "isLoading": "false",
+      "isError": "false",
+      "budgetdata": [
+        {
+          "isExpense": "false",
+          "amount": 10000,
+          "description": "Salary for the month"
+        },
+        {
+          "isExpense": "true",
+          "amount": 5000,
+          "description": "House rent"
+        },
+        {
+          "isExpense": "true",
+          "amount": 2000,
+          "description": "Crid card"
+        }
+      ],
+      "total": 10000
+    }
+  ]
+}
