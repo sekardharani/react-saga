@@ -17,10 +17,10 @@ function App() {
 
         <div className="row row-cols-2">
           <div className="col">
-            <IEdetails labelName={"Balance "} color={"text-success"} />
+            <IEdetails labelName={"Income"} color={"text-success"} />
           </div>
           <div className="col">
-            <IEdetails labelName={"Expence "} color={"text-danger"} />
+            <IEdetails labelName={"Expence"} color={"text-danger"} />
           </div>
         </div>
 

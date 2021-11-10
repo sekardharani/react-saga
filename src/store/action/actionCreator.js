@@ -2,6 +2,7 @@ import {
   API_CALL_REQUEST,
   API_CALL_SUCCESS,
   API_CALL_FAILURE,
+  ADD_ENTRY_SUCCESS,
 } from "./actionTypes";
 export const requestApiData = () => {
   return (dispatch, getState) => {
@@ -13,7 +14,12 @@ export const requestApiData = () => {
 export const receiveApiData = (data) => {
   return (dispatch, getState) => {
     dispatch({ type: API_CALL_SUCCESS, data });
-    console.log(getState());
+  };
+};
+
+export const addData = (data) => {
+  return (dispatch) => {
+    dispatch({ type: ADD_ENTRY_SUCCESS, data });
   };
 };
 

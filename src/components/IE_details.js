@@ -10,7 +10,15 @@ function IEdetails({ labelName = "Income", color = "text-success" }) {
         <label htmlFor="formGroupExampleInput" className="form-label">
           {labelName}
         </label>
-        <h3 className={color}>10000</h3>
+        {labelName === "Total" ? (
+          <h3 className={color}>{budget.budgetReducer.total}</h3>
+        ) : null}
+        {labelName === "Income" ? (
+          <h3 className={color}>{budget.budgetReducer.income}</h3>
+        ) : null}
+        {labelName === "Expence" ? (
+          <h3 className={color}>{budget.budgetReducer.expence}</h3>
+        ) : null}
         <hr />
       </div>
     </>
